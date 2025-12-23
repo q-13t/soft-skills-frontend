@@ -1,0 +1,141 @@
+.navbar_main {
+    padding: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-width: 610px;
+}
+
+
+.navbar {
+    border-radius: 4px;
+    background-color: white !important;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar_link {
+    margin-right: 5%;
+    width: 120px;
+}
+
+.navbar_link_end,
+.navbar_link {
+    background-color: rgb(219, 219, 219);
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #000000 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 0px rgb(25, 0, 255);
+
+}
+
+.navbar_link_end {
+    color: rgb(0, 0, 0) !important;
+    margin-left: 50px;
+    width: 85px;
+    text-align: center;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 0px rgb(25, 0, 255);
+}
+
+.user-profile {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user-profile img {
+    width: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 0px rgb(25, 0, 255);
+    padding: 5px;
+    
+}
+
+.notification img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 0px rgb(25, 0, 255);
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.justify-content-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+
+      .desktop-only {
+    display: none !important;
+  }
+  
+    .navbar_main {
+        padding: 25px 5%;
+            min-width: 100px;
+    }
+
+    .navbar {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .justify-content-end {
+        justify-content: flex-end;
+        padding: 0;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar_link_end {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 40px;
+    }
+
+    .user-profile {
+        margin-right: 20px;
+    }
+
+    .user-profile img {
+    width: 20px;
+    margin-right: 50px;
+}
+
+.notification img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+    nav .navbar_link {
+        width: 100%;
+         margin-bottom: 20px;
+    }
+
+
+}

@@ -1,0 +1,185 @@
+.manageTable {
+    padding: 12px 15px 110px;
+    border-radius: 20px;
+    background: black !important;
+}
+
+.manageTable__title {
+    color: rgba(248, 251, 255, 1) !important;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.manageTable__table {
+    width: 100%;
+}
+
+.charactList {
+    height: 300px !important;
+    font-size: 18px !important;
+}
+
+.modalHeader, .modalBody, .modalFooter {
+    background-color: black !important;
+    color: white;
+}
+
+.titleModal {
+    color: rgba(248, 251, 255, 1) !important;
+    text-align: center;
+}
+
+.manageTable__tr {
+    display: flex;
+}
+
+.manageTable__tr + .manageTable__tr {
+    margin-top: 3px;
+}
+
+.manageTable__td {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 2px 24px;
+    width: 30%;
+    max-width: 30%;
+}
+
+.skill_admin {
+    overflow: hidden;
+}
+
+.manageTable__td.skill_admin{
+    background-color: #232934;
+    color: white;
+}
+
+
+.manageTable__td:nth-child(2) {
+    position: relative;
+    width: 70%;
+    max-width: 70%;
+}
+
+.manageTable__td:nth-child(2):before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    height: calc(100% + 4px);
+    top: -2px;
+    width: 100%;
+    border-right: none;
+    border-radius: 5px;
+}
+
+.char_skill{
+    background-color: rgb(255, 255, 255)!important;
+    width: 100%;
+    border-radius: 2px;
+    pointer-events: none;
+    overflow:scroll !important;
+    display: flex !important;
+    color: rgb(0, 0, 0) !important;
+    z-index: 1;
+}
+.char_skill .manageTable__td{
+  
+    overflow: wrap !important;
+     width: 500px !important;
+ }
+
+.manageTable__td-wrap {
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    background-color: white !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 10px;
+}
+
+
+.manageTable__btn {
+    flex-shrink: 0;
+    padding: 0;
+    background-color: transparent;
+    border: hidden;
+    margin-left: 20px;
+}
+
+.manageTable__add {
+    background-color: transparent;
+    border: honeydew;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: rgba(248, 251, 255, 1) !important;
+}
+
+.manageTable__ico {
+    margin-right: 13px;
+    height: 44px;
+    width: 44px;
+    background-color: white!important;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.saveButton {
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+}
+
+.titleInput {
+    background-color:var(--text-color) !important;
+}
+
+.characteristicsList {
+    height: 300px !important;
+    font-size: 18px !important;
+}
+.modalEditSoft{
+    width: 50%;
+}
+
+.modalContent {
+    max-width: 620px;
+}
+
+.charactList {
+    background-color: white !important;
+    color: black!important;
+}
+
+.saveButton {
+    background-color: var(--secondary-color) !important;
+    border: none;
+}
+
+.titleInput{
+    color : var(--text-color);
+}
+
+.manageTable__add{
+    color:black
+}
+.selectedCharacteristicsList {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .selectedCharacteristicItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  

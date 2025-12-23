@@ -1,0 +1,222 @@
+.notification-sidebar {
+    width: 27%;
+    max-height: 50vh;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none; 
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease-in-out;
+}
+
+.notification-sidebar.visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+
+.close-btn_notification {
+    margin-top: 5%;
+    margin-left: 85%;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    transition: all .3s ease;
+    width: 30px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.viewAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    color: #636363;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto 15px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewAll:hover {
+    background-color: #d1d1d1;
+}
+
+.list {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 40vh;
+}
+
+.item-notification {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.notification-info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 10%;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.theme {
+    font-size: 13px;
+    color: #888;
+}
+
+.date-time {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.content {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
+  .noNotifications{
+    text-align: center;
+    margin: 20px 0;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .loading{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(71, 70, 70);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .go-to-test-button {
+    display: inline-block;
+    background-color: blue; 
+    color: white;            
+    padding: 10px 20px;      
+    border-radius: 5px;       
+    text-decoration: none;   
+    font-weight: bold;      
+    transition: background-color 0.3s ease; 
+  }
+  
+  .go-to-test-button:hover {
+    background-color: blue;
+  }
+  
+  .go-to-test-button:focus {
+    outline: none;  
+  }
+  
+  .go-to-test-button:active {
+    background-color: blue;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .notification-sidebar {
+    width: 50%;
+    right: 5%;
+    top: 60px;
+    max-height: 50vh;
+    border-radius: 10px;
+  }
+
+  .notification-info {
+    width: 100%;
+  }
+
+  .list {
+    max-height: 60vh;
+  }
+
+  .name, .theme, .date-time, .content {
+    font-size: 14px;
+  }
+
+  .go-to-test-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  .close-btn {
+    font-size: 5px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: 10px;
+  }
+  .profile-placeholder {
+  display: none;
+}
+}

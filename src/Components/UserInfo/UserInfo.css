@@ -1,0 +1,146 @@
+.userinfo_main {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    background: #000000;
+    margin-left: 5%;
+    border-radius: 4px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.userinfo {
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.font-weight-bold {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.basic_info {
+    background-color:#232934;
+    width: 80%;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0px 2px 0px #0000ff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.labels {
+    font-size: 18px;
+    color: #ffffff;
+    flex: 1;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.infotext {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: right;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.skeleton-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.skeleton-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ddd 25%, #ccc 50%, #ddd 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite ease-in-out;
+}
+
+.skeleton-line {
+    width: 80%;
+    height: 16px;
+    background: linear-gradient(90deg, #ddd 25%, #ccc 50%, #ddd 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite ease-in-out;
+    border-radius: 4px;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .basic_info {
+        width: 90%; 
+        padding: 20px;
+        margin-left: 10%
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .labels {
+        font-size: 16px; 
+    }
+
+    .infotext {
+        font-size: 16px;
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .basic_info {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .infotext {
+        text-align: left;
+        padding-left: 0;
+    }
+}

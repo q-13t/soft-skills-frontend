@@ -1,0 +1,127 @@
+
+
+.graphic_main{
+    padding: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.skillsCard{
+    border: solid 1px rgb(95, 90, 90);
+    background-color:#0D1119;
+    border-width: 3px;
+    border-radius: 15px;
+    border-radius: 15px;
+    height:450px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    padding:10px;
+    width: 90%;
+}
+
+.graph_card{
+    border: solid 1px rgb(95, 90, 90);
+    background-color: #0D1119;
+    border-width: 3px;
+    border-radius: 15px;
+    border-radius: 15px;
+    height:450px;
+        font-size: 20px;
+    color:white ;
+    display: flex;
+    padding:10px;
+        width: 90%;
+
+
+}
+.graphic_main .card-header{
+    border: none;
+    background-color: transparent !important;
+}
+.skill_item{
+    margin:10px;
+    background-color: #232934;
+    border: none;
+    color:white ;
+    border-radius: 10px;
+    border:3px solid black;
+    margin-top: 10px;
+    font-size: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 0px rgb(25, 0, 255); 
+
+
+}
+
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+.list-group-item:first-child {
+    border-top-left-radius:10px !important;
+    border-top-right-radius: 10px !important;;
+}
+.list-group-flush>.list-group-item:last-child {
+    border-bottom-width: 2px;
+}
+.list-group-flush>.list-group-item {
+    border-width: 2px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .skillsCard{
+        height: 380px;
+        width:80%;
+   
+    }
+    .card-header, .skill_item{
+        font-size:25px !important;
+    }
+
+    .mainWrapper{
+        flex-direction: column
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .skillsCard{
+        height: 370px;
+        width:80%;
+  
+    }
+    .card-header{
+        font-size:25px !important;
+    }
+
+    .mainWrapper{
+        flex-direction: column
+    }
+}
+
+
+.graph_card {
+    color: white;
+  }
+  
+  .graph_card .card-header {
+    color: white;
+  }
+  
+ 
+  
+  .graph_card .recharts-tooltip-wrapper .recharts-default-tooltip {
+    background-color: black;
+    color: black;
+    border: 1px solid white;
+  }

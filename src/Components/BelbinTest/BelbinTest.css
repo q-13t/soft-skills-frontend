@@ -1,0 +1,149 @@
+.test-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.questions-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.question-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.nav-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  
+  color:var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: linear-gradient(135deg,var(--primary-color));
+  transform: scale(1.05);
+}
+
+.question-block {
+  padding: 20px;
+  background: #f9f9fb;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.question-block:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-question {
+  margin-top: 15px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  background: #fafafa;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+button.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background: blue;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button.submit-button:hover {
+  background: linear-gradient(135deg,  var(--primary-color));
+  transform: scale(1.05);
+}
+
+.point-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.point-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+
+.point-button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.point-button.selected {
+  background: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .test-container {
+    padding: 20px;
+  }
+
+  .nav-button, .submit-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  .point-buttons {
+    gap: 5px;
+  }
+}
+
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
