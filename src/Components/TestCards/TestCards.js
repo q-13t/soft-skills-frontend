@@ -16,7 +16,7 @@ export default function TestCards() {
     const [showDescription, setShowDescription] = useState(false);
     const [selectedTest, setSelectedTest] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const dispatch = useDispatch();
     const userInfo = useSelector((state) => state.auth.userInfo);

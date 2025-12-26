@@ -14,7 +14,7 @@ const RadioButtonItem = ({
     onDelete,
     onUpdate,
 }) => {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [options, setOptions] = useState([
         { label: "Radio 1", points: 1, characteristicId: "65c3adfbfe2b0e98e5ba7374" },

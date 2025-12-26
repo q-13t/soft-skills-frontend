@@ -7,7 +7,7 @@ import React, { useState, useEffect, useCallback } from "react";
 export default function ProfileGraphic() {
 
     const [data, setData] = useState([]);
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [skills, setSkills] = useState([]);
     const fetchSkills = useCallback(async (authToken) => {

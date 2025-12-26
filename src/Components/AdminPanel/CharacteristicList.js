@@ -5,7 +5,7 @@ import axios from "axios";
 import Delete from "../../Assets/Images/delete.png";
 
 function ManageSkills() {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [characteristics, setCharacteristics] = useState([]);
     const [showModal, setShowModal] = useState(false);

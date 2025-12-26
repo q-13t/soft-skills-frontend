@@ -5,7 +5,7 @@ import "./TestList.css";
 import { Link } from "react-router-dom";
 
 function TestList() {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [tests, setTests] = useState([]);
     const [showToast, setShowToast] = useState(false);

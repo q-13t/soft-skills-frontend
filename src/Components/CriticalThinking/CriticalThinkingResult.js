@@ -13,7 +13,7 @@ const CriticalThinkingResults = () => {
     const [loading, setLoading] = useState(true);
     const [hasFetched, setHasFetched] = useState(false);
     const { state } = useLocation();
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const TEST_ID = "683335f246830d764b292356";
 

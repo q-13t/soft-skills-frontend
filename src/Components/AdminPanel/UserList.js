@@ -14,7 +14,7 @@ import "./UserList.css";
 import uimg from "../../Assets/Images/avatar.png";
 
 function UserList() {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [users, setUsers] = useState([]);
     const [filteredUsers, setFilteredUsers] = useState([]);

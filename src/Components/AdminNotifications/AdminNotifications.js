@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AdminNotifications.css";
 
 const NotificationForm = () => {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
     const [users, setUsers] = useState([]);
     const [addedUsers, setAddedUsers] = useState([]);
     const [search, setSearch] = useState("");

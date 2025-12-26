@@ -9,7 +9,7 @@ export default function UserTests() {
     const userId = localStorage.getItem("userId");
     const token = localStorage.getItem("authToken");
     const navigate = useNavigate();
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const fetchWithRetry = async (url, options, retries = 3, delay = 1000) => {
         for (let i = 0; i < retries; i++) {

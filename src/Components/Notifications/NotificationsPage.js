@@ -12,7 +12,7 @@ const NotificationsPage = () => {
     const [hasMore, setHasMore] = useState(true);
     const [users, setUsers] = useState({});
     const notificationsPerPage = 10;
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const fetchUserWithRetry = async (userId, retries = 5, delayTime = 1000) => {
         const cachedUser = localStorage.getItem(`user_${userId}`);

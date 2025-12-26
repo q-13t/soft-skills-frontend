@@ -8,7 +8,7 @@ import './EmotionalIntelligence.css';
 import pLimit from 'p-limit';
 
 const EmotionalIntelligenceResults = () => {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [data, setData] = useState({});
     const [dates, setDates] = useState([]);

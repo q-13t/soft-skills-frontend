@@ -7,7 +7,7 @@ import Pencil from "../../Assets/Images/pencil.png";
 import Delete from "../../Assets/Images/delete.png";
 
 function ManageSkills() {
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const [skills, setSkills] = useState([]);
     const [showModal, setShowModal] = useState(false);

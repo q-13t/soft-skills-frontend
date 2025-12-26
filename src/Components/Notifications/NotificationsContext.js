@@ -9,7 +9,7 @@ export const NotificationsProvider = ({ children }) => {
     const [unreadCount, setUnreadCount] = useState(0);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
-    const BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
+    const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
 
     const fetchNotifications = useCallback(() => {
         const userId = localStorage.getItem('userId');
